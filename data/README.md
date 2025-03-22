@@ -2,8 +2,8 @@
 
 The following 35 papers were selected for our analysis after applying our inclusion and exclusion criteria:
 
-| Paper ID | Paper Title | Venue |
-|:--------:|:------------|:-----:|
+| Paper ID |                                                 Paper Title                                                 | Venue |
+|:--------:|:-----------------------------------------------------------------------------------------------------------:|:-----:|
 | P1 | [Exploring Parameter-Efficient Fine-Tuning of Large Language Model on Automated Program Repair](https://ieeexplore.ieee.org/document/10764872) | ASE |
 | P2 | [An Empirical Study on Fine-Tuning Large Language Models of Code for Automated Program Repair](https://dl.acm.org/doi/10.1109/ASE56229.2023.00181) | ASE |
 | P3 | [FastFixer: An Efficient and Effective Approach for Repairing Programming Assignments](https://dl.acm.org/doi/10.1145/3691620.3695062) | ASE |
