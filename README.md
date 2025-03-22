@@ -50,4 +50,3 @@ This visualization shows where PEFT-SE research is being published, with ASE, TO
 
 This flowchart illustrates our systematic approach to paper selection, from initial search to final inclusion.
 
-## Repository Structure
