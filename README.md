@@ -1,4 +1,4 @@
-# PEFT-SE-Analysis
+# SLR-PEFT
 
 This repository contains code, data, and visualizations for analyzing benchmarking practices in Parameter-Efficient Fine-Tuning (PEFT) methods for Software Engineering (SE) tasks.
 
