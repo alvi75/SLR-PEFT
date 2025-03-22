@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-input_csv = "peft_se_benchmark_metadata.csv"
+input_csv = "../data/peft_se_benchmark_metadata.csv"
 df = pd.read_csv(input_csv, encoding="iso-8859-1")
 
 columns_needed = ["SE Task", "Hardware Details"]
