@@ -46,7 +46,7 @@ This chart presents the hardware resources used across different SE tasks, showi
 This visualization shows where PEFT-SE research is being published, with ASE, TOSEM, FSE, and ICSE being the primary venues.
 
 ### 5. Paper Selection Process
-![Paper Selection Process](visualizations/data_collection_pipeline.png)
+![Paper Selection Process](visualizations/data_collection_pipeline.pdf)
 
 This flowchart illustrates our systematic approach to paper selection, from initial search to final inclusion.
 
