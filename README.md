@@ -35,7 +35,7 @@ We cover:
 
 ### 2. SE Task Distribution Over Time
 
-![Tasks by Year](visualizations/.png)
+![Tasks by Year](visualizations/enhanced_se_task_trends.png)
 
 - Evolution of SE tasks targeted by PEFT research from 2022–2025.
 
