@@ -50,7 +50,7 @@ We cover:
 
 ![Paper Selection Process](visualizations/data_collection_pipeline.png)
 
-- Systematic workflow for paper selection in the SLR.
+- Workflow for paper selection in the SLR.
 
 ---
 
