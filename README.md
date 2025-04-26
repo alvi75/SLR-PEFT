@@ -33,31 +33,20 @@ We cover:
 
 - **Figure**: Number of studies using each PEFT method for each SE task.
 
-### 2. Benchmarking Practices Across SE Tasks
+### 2. SE Task Distribution Over Time
 
-![Benchmarking Practices](visualizations/benchmarking_practices_stacked_bar.png)
-
-- Studies categorized by their evaluation practices and dataset usage.
-
-### 3. SE Task Distribution Over Time
-
-![Tasks by Year](visualizations/enhanced_se_task_trends.png)
+![Tasks by Year](visualizations/.png)
 
 - Evolution of SE tasks targeted by PEFT research from 2022–2025.
 
-### 4. GPU Hardware Distribution
 
-![GPU Distribution](visualizations/gpu_hardware_distribution.png)
+### 3. Publication Venues
 
-- Types of GPUs used in different PEFT-SE studies.
-
-### 5. Publication Venues
-
-![Publication Venues](visualizations/venue_barplot.png)
+![Publication Venues](visualizations/.png)
 
 - Distribution of PEFT-SE research across conferences and journals.
 
-### 6. Paper Selection Process
+### 4. Paper Selection Process
 
 ![Paper Selection Process](visualizations/data_collection_pipeline.png)
 
