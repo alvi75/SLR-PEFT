@@ -103,5 +103,5 @@ handles.append(more_patch)
 ax.legend(handles=handles, title="SE Task", bbox_to_anchor=(1.05, 1), loc="upper left", fontsize=15, title_fontsize=15)
 
 plt.tight_layout()
-plt.savefig("enhanced_se_task_trends.png", dpi=300, bbox_inches="tight")
+plt.savefig("../visualizations/enhanced_se_task_trends.png", dpi=300, bbox_inches="tight")
 plt.show()
