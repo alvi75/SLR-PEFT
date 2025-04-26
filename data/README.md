@@ -5,12 +5,9 @@ The following 35 papers were selected for our analysis after applying our inclus
 | Paper ID |                                                 Paper Title                                                 | Venue |
 |:--------:|:-----------------------------------------------------------------------------------------------------------:|:-----:|
 | P1 | [Exploring Parameter-Efficient Fine-Tuning of Large Language Model on Automated Program Repair](https://ieeexplore.ieee.org/document/10764872) | ASE |
-| P2 | [An Empirical Study on Fine-Tuning Large Language Models of Code for Automated Program Repair](https://dl.acm.org/doi/10.1109/ASE56229.2023.00181) | ASE |
 | P3 | [FastFixer: An Efficient and Effective Approach for Repairing Programming Assignments](https://dl.acm.org/doi/10.1145/3691620.3695062) | ASE |
 | P4 | [Comprehensive Fine-Tuning Large Language Models of Code for Automated Program Repair](https://ieeexplore.ieee.org/abstract/document/10850625) | TSE |
 | P5 | [Domain Knowledge Matters: Improving Prompts with Fix Templates for Repairing Python Type Errors](https://dl.acm.org/doi/abs/10.1145/3597503.3608132) | ICSE |
-| P6 | [An Empirical Study of Retrieval-Augmented Code Generation: Challenges and Opportunities](https://dl.acm.org/doi/10.1145/3717061) | TOSEM |
-| P7 | [Preference-Guided Refactored Tuning for Retrieval Augmented Code Generation](https://dl.acm.org/doi/10.1145/3691620.3694987) | ASE |
 | P8 | [Teaching Code LLMs to Use Autocompletion Tools in Repository-Level Code Generation](https://dl.acm.org/doi/10.1145/3714462) | TOSEM |
 | P9 | [Exploring and evaluating personalized models for code generation](https://dl.acm.org/doi/10.1145/3540250.3558959) | FSE |
 | P10 | [MFTCoder: Boosting Code LLMs with Multitask Fine-Tuning](https://dl.acm.org/doi/10.1145/3637528.3671609) | KDD |
@@ -18,15 +15,10 @@ The following 35 papers were selected for our analysis after applying our inclus
 | P12 | [CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning](https://openreview.net/forum?id=Gi00NVru6n) | NeurIPS |
 | P14 | [SimSCOOD: Systematic Analysis of Out-of-Distribution Generalization in Fine-tuned Source Code Models](https://aclanthology.org/2024.findings-naacl.90/) | NAACL |
 | P15 | [CodePrompt: Task-Agnostic Prefix Tuning for Program and Language Generation](https://aclanthology.org/2023.findings-acl.325/) | ACL |
-| P16 | [EffiLearner: Enhancing Efficiency of Generated Code via Self-Optimization](https://openreview.net/forum?id=KhwOuB0fs9) | NeurIPS |
 | P18 | [Automating Method Naming with Context-Aware Prompt-Tuning](https://ieeexplore.ieee.org/abstract/document/10174153) | ICPC |
-| P19 | [DroidCoder: Enhanced Android Code Completion with Context-Enriched Retrieval-Augmented Generation](https://dl.acm.org/doi/10.1145/3691620.3695063) | ASE |
-| P20 | [FT2Ra: A Fine-Tuning-Inspired Approach to Retrieval-Augmented Code Completion](https://dl.acm.org/doi/10.1145/3650212.3652130) | ISSTA |
 | P21 | [Low-Resources Project-Specific Code Summarization](https://dl.acm.org/doi/10.1145/3551349.3556909) | ASE |
 | P22 | [Model-Agnostic Syntactical Information for Pre-Trained Programming Language Models](https://ieeexplore.ieee.org/abstract/document/10173960) | MSR |
 | P23 | [Exploring the Capabilities of LLMs for Code Change Related Tasks](https://dl.acm.org/doi/10.1145/3709358) | TOSEM |
-| P24 | [CCAF: Learning Code Change via AdapterFusion](https://dl.acm.org/doi/10.1145/3671016.3671399) | TOSEM |
-| P25 | [Few-shot code translation via task-adapted prompt learning](https://www.sciencedirect.com/science/article/pii/S0164121224000451) | JSS |
 | P26 | [Pass-Tuning: Towards Structure-Aware Parameter-Efficient Tuning for Code Representation Learning](https://aclanthology.org/2023.findings-emnlp.42/) | EMNLP |
 | P27 | [Fine-Tuning Large Language Models to Improve Accuracy and Comprehensibility of Automated Code Review](https://dl.acm.org/doi/10.1145/3695993) | TOSEM |
 | P28 | [Utilization of pre-trained language models for adapter-based knowledge transfer in software engineering](https://link.springer.com/article/10.1007/s10664-024-10457-5) | EMSE |
