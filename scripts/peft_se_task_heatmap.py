@@ -90,7 +90,7 @@ plt.xlabel("PEFT Methods", fontsize=18, fontweight="bold", labelpad=20)
 plt.ylabel("SE Tasks", fontsize=18, fontweight="bold", labelpad=20)
 
 plt.tight_layout()
-output_path = "heatmap_of_peft_methods_across_se_tasks.png"
+output_path = "../visualizations/heatmap_of_peft_methods_across_se_tasks.png"
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
 plt.show()
 
