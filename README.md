@@ -1,52 +1,101 @@
-# SLR-PEFT
+# A Systematic Literature Review of Parameter-Efficient Fine-Tuning for Large Code Models
 
-This repository contains code, data, and visualizations for analyzing benchmarking practices in Parameter-Efficient Fine-Tuning (PEFT) methods for Software Engineering (SE) tasks.
+## Abstract
+
+The rise of Artificial Intelligence (AI)—and particularly Large Language Models (LLMs) for code—has reshaped Software Engineering (SE) by enabling the automation of tasks such as code generation, bug detection, and repair. However, these models require significant computational resources for training and fine-tuning, posing challenges for real-world adoption in resource-constrained environments. To address this, the research community has increasingly turned to Parameter-Efficient Fine-Tuning (PEFT)—a class of techniques that enables the adaptation of large models by updating only a small subset of parameters, rather than the entire model.
+
+In this Systematic Literature Review (SLR), we examine the growing application of PEFT techniques across a wide range of software engineering tasks. We analyze how these methods are used to optimize various deep learning (DL) architectures, focusing on their impact on both performance and efficiency.
+
+Our study synthesizes findings from 27 peer-reviewed papers, identifying patterns in configuration strategies and adaptation trade-offs. The outcome of this review is a comprehensive taxonomy that categorizes PEFT usage by task type, distinguishing between generative (e.g., Code Summarization) and non-generative (e.g., Code Clone Detection) scenarios.
+
+Our findings aim to inform future research and guide the practical deployment of PEFT in sustainable, AI-powered software development.
+
+---
 
 ## Overview
 
-This project analyzes how PEFT methods are evaluated across 15 different Software Engineering tasks, examining:
+This repository analyzes benchmarking practices for Parameter-Efficient Fine-Tuning (PEFT) methods applied to Software Engineering (SE) tasks.
+
+We cover:
 - Adherence to established evaluation practices
 - Usage of standard datasets
 - Distribution of PEFT methods across tasks
 - Hardware resources used in studies
 - Publication venues and trends over time
 
+---
+
 ## Visualizations
 
-### 1. Benchmarking Practices Across SE Tasks
+### 1. Heatmap of PEFT Methods Across SE Tasks
+
+![PEFT Heatmap](visualizations/peft_se_tasks_heatmap.png)
+
+- **Figure**: Number of studies using each PEFT method for each SE task.
+
+### 2. Benchmarking Practices Across SE Tasks
+
 ![Benchmarking Practices](visualizations/benchmarking_practices_stacked_bar.png)
 
-This stacked bar chart illustrates how different SE tasks compare in terms of:
-- Studies following established evaluation practices
-- Studies using standard datasets
-- Studies that follow both practices
-- Studies that follow neither practice
+- Studies categorized by their evaluation practices and dataset usage.
 
-The visualization reveals that while many studies follow established evaluation metrics, there's significant room for improvement in adopting standard datasets for fair comparisons.
+### 3. SE Task Distribution Over Time
 
-### 2. SE Task Distribution Over Time
 ![Tasks by Year](visualizations/enhanced_se_task_trends.png)
 
-This visualization shows the evolution of PEFT-SE research from 2022 to 2025, highlighting:
-- The growing diversity of SE tasks being addressed
-- The increasing focus on Code Generation and Code Summarization
-- Emerging research in newer areas like Defect Prediction and Code Refinement
+- Evolution of SE tasks targeted by PEFT research from 2022–2025.
 
-### 3. GPU Hardware Distribution
+### 4. GPU Hardware Distribution
+
 ![GPU Distribution](visualizations/gpu_hardware_distribution.png)
 
-This chart presents the hardware resources used across different SE tasks, showing:
-- Predominant use of high-end GPUs (A100, V100) for compute-intensive tasks
-- Variation in hardware requirements across different SE applications
-- Tasks requiring the most computational resources
+- Types of GPUs used in different PEFT-SE studies.
 
-### 4. Publication Venues
+### 5. Publication Venues
+
 ![Publication Venues](visualizations/venue_barplot.png)
 
-This visualization shows where PEFT-SE research is being published, with ASE, TOSEM, FSE, and ICSE being the primary venues.
+- Distribution of PEFT-SE research across conferences and journals.
 
-### 5. Paper Selection Process
+### 6. Paper Selection Process
+
 ![Paper Selection Process](visualizations/data_collection_pipeline.pdf)
 
-This flowchart illustrates our systematic approach to paper selection, from initial search to final inclusion.
+- Systematic workflow for paper selection in the SLR.
 
+---
+
+## Repository Structure
+
+| Folder/File | Purpose |
+|:------------|:--------|
+| `/data` | Contains processed data and metadata for selected papers |
+| `/visualizations` | All generated charts and plots (including the new heatmap) |
+| `/code` | Scripts for data processing and visualization |
+| `README.md` | Updated README document |
+| `LICENSE` | License information |
+| `requirements.txt` | Python dependencies (if applicable) |
+
+---
+
+## How to Reproduce
+
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd <repo-directory>
+   ```
+2. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run visualization scripts (optional):
+   ```bash
+   python code/generate_visualizations.py
+   ```
+
+Outputs will be saved inside the `/visualizations` folder.
+
+---
+
+Thank you for exploring our work on PEFT for SE tasks!
