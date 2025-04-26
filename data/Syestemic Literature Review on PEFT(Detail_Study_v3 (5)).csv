@@ -1,0 +1,114 @@
+Paper ID,Venue,Year,SE Task,PEFT Method,Base Model,Model Architecture,Dataset
+P1,ASE,2024,Automated Program Repair,"LoRA, P-Tuning, Prefix Tuning, IA3","CodeLlama-7B, CodeLlama-13B, Llama-2-7B, DeepSeek-Coder-Base-6.7B (best result)",Decoder,"used gpt-3.5 turbo for 30,000 APR instructions, compared with Code Alpaca and OSS-Instruction, LoRA and P-Tuning, are applied to DeepSeek-Coder-Base-6.7B. OSSInstruction consists of 75,000 instructions. To mitigate the impact of data volume for SFT, a random selection of 30,000 instructions from OSS-Instruction was executed to construct the OSSInstruction-30K for instruction-tuning. On the other hand, Code
+Alpaca comprises a total of 20,000 instructions, which were totally
+used for instruction-tuning"
+P3,ASE,2024,Automated Program Repair,LoRA,CodeLlama-7B,Decoder,Defects4DS
+P4,TSE,2025,Automated Program Repair,"LoRA, AdaLoRA, IA3","InCoder-6B, CodeGeeX2-6B, CodeGen25-7B,
+StarCoder-15B, CodeLlama-34B",Decoder,"Transfer dataset (TraD) provided by
+Meng et al."
+P5,ICSE,2024,Code Refinement,Prompt Tuning,CodeT5,Encoder-Decoder,"Training:	Custom dataset from GitHub PRs (10,981 fixes)
+Evaluation: BugsInPy, TypeBugs"
+P8,TOSEM,2025,Code Generation,LoRA,CodeLlama,Decoder,"CodeSearchNet-derived
+
+12,406 Python functions
+
+From 671 code repositories
+
+Used for similarity & dependency-based evaluation
+
+CoderEval-derived
+
+176 Python code generation tasks
+
+From 43 real-world repositories
+
+Includes test cases and project context
+
+Used for execution-based evaluation"
+P9,FSE,2022,Unit Test Generation,Prefix Tuning,BART,Encoder-Decoder,20 real-world Java projects sampled from the test set of the data used to train AthenaTest [29]
+P10-CG,KDD,2024,Code Generation,"LoRA, QLoRA (MFT-5Tasks)","LoRA: QWen-14B, CodeGeex2-6B, StarCoder-15B, and CodeLlama-Python-13B,  QLoRA: LLaMA-65B, LLaMA2-70B, CodeLlama-34B, and DeepSeek-Coder-33B.",Decoder,MBPP
+P10-CComp,KDD,2024,Code Completion,"LoRA, QLoRA (MFT-5Tasks)","LoRA: QWen-14B, CodeGeex2-6B, StarCoder-15B, and CodeLlama-Python-13B,  QLoRA: LLaMA-65B, LLaMA2-70B, CodeLlama-34B, and DeepSeek-Coder-33B.",Decoder,"HumanEval, HumanEval-X"
+P10-CTrans,KDD,2024,Code Translation,QLoRA (MFT-5Tasks),CodeLlama-13B-Python-base,Decoder,CodeFuseEval
+P10-UTG,KDD,2024,Unit Test Generation,QLoRA (MFT-5Tasks),CodeLlama-13B-Python-base,Decoder,CodeFuseEval
+P10-CSum,KDD,2024,Code Summarization,QLoRA (MFT-5Tasks),CodeLlama-13B-Python-base,Decoder,MBPP
+P11,ICSE,2024,Code Generation,LoRA,"Code Llama 7B, Code Llama 34B",Decoder,"OSCAT IEC 61131-3 Library (Structured Text); derived into 3 task-specific datasets: code generation, code completion (via truncation), and code fixing (via line deletion); 636 valid ST files total (596 train / 40 test)"
+P12,NeurIPS,2024,Code Generation,LoRA,"LLaMA-2-7B, RoBERTa-base: for GLUE benchmark not for code related task",Decoder,"Training Dataset:	CodeFeedback,
+Evaluation Datasets:	HumanEval, MBPP"
+P14-CG,NAACL,2024,Code Generation,LoRA,"CodeT5, CodeT5+, Code Llama","Encoder-Decoder, Decoder",CodeXGLUE
+P14-CRF,NAACL,2024,Code Refinement,LoRA,"GraphCodeBERT (GCBERT), CodeT5, CodeT5+, Code Llama","Encoder, Encoder-Decoder, Decoder,",CONCODE
+P15-CSum,ACL,2023,Code Summarization,Prefix Tuning,CodeT5,Encoder-Decoder,"CodeXGLUE (Ruby, Javascript, Go, PHP, Java, Python)"
+P15-CG,ACL,2023,Code Generation,Prefix Tuning,CodeT5,Encoder-Decoder,CodeXGLUE (NL to Java)
+P15-CTrans,ACL,2023,Code Translation,Prefix Tuning,CodeT5,Encoder-Decoder,"CodeXGLUE (Java to C#, C# to Java)"
+P18-MNR,ICPC,2023,Method Name Recommendation,Prompt Tuning,CodeT5,Encoder-Decoder,"Java-small, Java-med and Java-large from Alon
+et al. and another one built by Nguyen et al."
+P18-MNCC,ICPC,2023,Method Name Consistency Check,Prompt Tuning,CodeT5,Encoder-Decoder,widely used dataset collected by Liu et al.
+P21,ASE,2022,Code Summarization,Prefix Tuning,MPCos uses a Transformer encoder-decoder with prefix tuning and meta-learning (MAML) to enable low-resource project-specific code summarization.,Encoder-Decoder,"custom Project-Specific Code Summarization (PCS), Java based Dataset 3.7k pairs from 9 projects (Apache, Google, Spring); "
+P22-CSum,MSR,2023,Code Summarization,"L-Adapter + NER-Adapter + AdapterFusion
+",CodeBERT,Encoder,"CodeSearchNet (Go, Java, JavaScript, Python, Ruby)"
+P22-CRF,MSR,2023,Code Refinement,"L-Adapter + NER-Adapter + AdapterFusion
+",CodeBERT,Encoder,"Used the BFP Small dataset from Tufano et al. [10] for the code refinement task, with 46,680 training and 5,835 each for validation and test."
+P23-CMG,TOSEM,2024,Commit Message Generation,"LoRA, Prefix Tuning","InCoder-1b, CodeGen-2b-nl, CodeGen-6b-nl, Llama 2-7b, Llama 2-13b, Code Llama-7b, Code Llama-13b",Decoder,"Uses the Multi-programming language Commit Message Dataset (MCMD) by Tao et al., which includes 2,250,000 commit-message pairs collected from the top 100 starred GitHub repositories in five languages: Python, Java, JavaScript, C#, and C++. The dataset was de-tokenized to restore original code format before model input."
+P23-CRG,TOSEM,2024,Code Review Generation,"LoRA, Prefix Tuning","InCoder-1b, CodeGen-2b-nl, CodeGen-6b-nl, Llama 2-7b, Llama 2-13b, Code Llama-7b, Code Llama-13b",Decoder,"Uses the dataset by Li et al., containing 138,127 diff-review pairs across nine programming languages (specific languages not listed), collected from popular open-source GitHub projects. Each pair includes a real-world code change and its corresponding human-written code review comment."
+P23-JITCU,TOSEM,2024,Just-in-time Comment Update,"LoRA, Prefix Tuning","InCoder-1b, CodeGen-2b-nl, CodeGen-6b-nl, Llama 2-7b, Llama 2-13b, Code Llama-7b, Code Llama-13b",Decoder,"Uses the dataset originally created by Liu et al. and later cleaned by Lin et al. , containing 98,622 instances from 1,496 high-quality Java projects. Each instance includes a code change and the corresponding update to the header comment associated with the modified method."
+P26-CCD,EMNLP,2023,Code Clone Detection,"Pass-Tuning, BitFit, Adapter, P-Tuning","CodeT5, PLBART",Encoder-Decoder,BigCloneBench
+P26-DD,EMNLP,2023,Defect Detection,"Pass-Tuning, BitFit, Adapter, P-Tuning","CodeT5, PLBART",Encoder-Decoder,"Devign (Zhou et al.,
+2019)"
+P26-CSum,EMNLP,2023,Code Summarization,"Pass-Tuning, BitFit, Adapter, P-Tuning","CodeT5, PLBART",Encoder-Decoder,CodeSearchNet
+P26-CG,EMNLP,2023,Code Generation,"Pass-Tuning, BitFit, Adapter, P-Tuning","CodeT5, PLBART",Encoder-Decoder,CONCode
+P26-CTrans,EMNLP,2023,Code Translation,"Pass-Tuning, BitFit, Adapter, P-Tuning","CodeT5, PLBART",Encoder-Decoder,"Java-C# dataset (Nguyen et al., 2015)"
+P26-CRF,EMNLP,2023,Code Refinement,"Pass-Tuning, BitFit, Adapter, P-Tuning","CodeT5, PLBART",Encoder-Decoder,"Refine-Small, Refine-Medium (Tufano et al. 2019)"
+P27,TOSEM,2024,Code Review,LoRA,"LLaMA, LLaMA2, CodeLLaMA, Magicoder (Carllm, Carllm2, and CodeCarllm and MagiCarllm)",Decoder,"A same training dataset contains 19,456 instances
+(diff-review comment pairs, both positive and negative,
+see Section 3.2.3) prepared for Carllm,
+CodeBert, CodeT5, CodeReviewer, and LLaMA-Reviewer.
+The testing dataset contains 1,000 positive instances
+and 1,000 negative instances which have not been
+included in the training dataset."
+P28-CT,EMSE,2024,Cloze Test, L-Adapter,RoBERTa-base,Encoder,"Java & Python: CodeSearchNet (CSN) used to train L-adapters for Java and Python.
+
+C/C++: CodeNet used to train L-adapter for C/C++ (since CSN doesn’t have C/C++)."
+P28-CCD,EMSE,2024,Code Clone Detection," L-Adapter, T-Adapter",RoBERTa-base,Encoder,"uses CodeNet to train C/C++ L-adapters evaluated on POJ-104, CodeSearchNet to train Java and Python L-adapters evaluated on BigCloneBench (Java) and SCD-88 (Python)."
+P28-CSum,EMSE,2024,Code Summarization, T-Adapter,"RoBERTa-base, GraphCodeBERT, CodeBERT",Encoder,"bimodal CodeSearchNet dataset (code-comment pairs) across six languages: Ruby, JavaScript, Go, Python, Java, and PHP."
+P29-CS,ISSTA,2023,Code Search,Telly-K (K indicate bottom layers),"UniXcoder, GraphCodeBERT  (result on appendix)",Encoder,"CodeSearchNet (Python(251K/9.6K/1K), Ruby(24.9K/1.4K/1.3K))  (train/val/test)"
+P29-CCD,ISSTA,2023,Code Clone Detection,Telly-K (K indicate bottom layers),"UniXcoder, GraphCodeBERT  (result on appendix)",Encoder,BigCloneBench (Java(901K/416K/416K)) (train/val/test)
+P29-CSum,ISSTA,2023,Code Summarization,Telly-K (K indicate bottom layers),"UniXcoder, GraphCodeBERT  (result on appendix)",Encoder,"CodeSearchNet (Python(251K/9.6K/1K), Ruby(24.9K/1.4K/1.3K))  (train/val/test)"
+P29-CG,ISSTA,2023,Code Generation,Telly-K (K indicate bottom layers),"UniXcoder, GraphCodeBERT  (result on appendix)",Encoder,CONCODE(Java(100K/2K/2K)) (train/val/test)
+P29-CComp,ISSTA,2023,Code Completion,Telly-K (K indicate bottom layers),"UniXcoder, GraphCodeBERT (result on appendix)",Encoder,GitHub Java Corpus (12K/1.5K/1.5K) (train/val/test)
+P30-DD,SANER,2024,Defect Detection,"Adapter, LoRA","CodeBERT, GraphCodeBERT, PLBART, UniXcoder, CodeT5",Encoder,"JIT-Defects4J (16374, 5465, 5480) (train/val/test)"
+P30-CMG,SANER,2024,Commit Message Generation,"Adapter, LoRA","CodeT5 (for 1K, 5K, 10K sample as well)",Encoder,"Multi-language Commit
+Message Dataset (MCMD) for experiments [52]. (train/val/test) Java (160018, 19825, 20159), C# (149907, 18688, 18702), C++ (160,948, 20000,  20141), Python (206777, 25912, 25837), JavaScript (197529, 24899,  24773)"
+P31-DD,ASE,2023,Defect Detection,"Adapter, LoRA, Prefix Tuning, Prompt Tuning, MAM","CodeBERT, GraphCodeBERT",Encoder," Devign (train/val/test) (21854, 2732, 2732) (lng: C)"
+P31-CCD,ASE,2023,Code Clone Detection,"Adapter, LoRA, Prefix Tuning, Prompt Tuning, MAM","CodeBERT, GraphCodeBERT",Encoder,"BigCloneBench (train/val/test) (90102,  4000, 4000) (Java)"
+P31-CTrans,ASE,2023,Code Translation,"Adapter, LoRA, Prefix Tuning, Prompt Tuning, MAM"," CodeT5, PLBART",Encoder-Decoder,"Java-C# (10295, 499, 1000) Java & C# (train/val/test) (Java-C#) same for C#-Java (10295, 499, 1000) Java & C#"
+P31-CSum,ASE,2023,Code Summarization,"Adapter, LoRA, Prefix Tuning, Prompt Tuning, MAM"," CodeT5, PLBART",Encoder-Decoder,"CodeSearchNet (train/val/test) (164923, 5183, 10955 Java), (251820,  13914, 14918 Python), (241241,  12982, 14014 PHP), (167288, 7325, 8122 Go), (24927, 1400, 1261 Ruby), (58025, 3885, 3291 JavaScript), for project specific summarization: Spring-Boot (1576, 226, 450 Java), Spring-Framework (7714, 1102, 2204 Java), Spring-Security (1465, 209, 418 Java), Apache-Kafka (2415, 345, 690 Java), Apache-Flink (8086, 1155, 2310 Java)"
+P32-CS,TSE,2023,Code Search,Prompt Tuning,CodeBERT,Encoder,"CodeSearchNet, (train/val/test) Ruby (48791, 2209, 2279), JavaScript (123889, 8253, 6483), Go (317832, 14242, 14291), Python (409230, 22906, 22104), Java (454451, 15053, 26717), PHP (523712, 26015, 28391), C (104267, 13033, 13034)"
+P32-CSum,TSE,2023,Code Summarization,Prompt Tuning,"CodeT5-small, CodeT5-base",Encoder-Decoder,"same dataset as the CodeT5
+work. The datasets used for the code summarization task are
+also CodeSearchNet and CCSD, (train/val/test) Ruby (48791, 2209, 2279), JavaScript (123889, 8253, 6483), Go (317832, 14242, 14291), Python (409230, 22906, 22104), Java (454451, 15053, 26717), PHP (523712, 26015, 28391), C (104267, 13033, 13034)"
+P32-CTrans,TSE,2023,Code Translation,Prompt Tuning,"CodeT5-small, CodeT5-base",Encoder-Decoder,"Lu et al., and is collected from four public repositories (including
+Lucene, POI, JGit, and Antlr). Given a piece of Java (C#) code,
+the task is to translate the code into the corresponding C# (Java)
+version, (train/val/test) (10300, 500, 1000)"
+P32-DD,TSE,2023,Defect Detection,Prompt Tuning,"CodeBERT, CodeT5-small, CodeT5-base","Encoder, Encoder-Decoder","Zhou et al..
+It contains 27K+ C code snippets from two open-source projects
+QEMU and FFmpeg, and 45.0% of the entries are defective, (train/val/test) (21854, 2732, 2732)"
+P33-CSum,ARXIV,2022,Code Summarization,"Adapter, LoRA, FF-LoRA (Feed Forward layer), FF-LoRA + AT","CodeT5-base, PLBART-base",Encoder-Decoder,"CodeSearchNet dataset with 251,820 train / 13,914 dev / 14,918 test examples in Python and 167,288 train / 7,325 dev / 8,122 test examples in Go"
+P33-CCD,ARXIV,2022,Code Clone Detection,"Adapter, LoRA, FF-LoRA (Feed Forward layer), FF-LoRA + AT","CodeT5-base, PLBART-base",Encoder-Decoder,"dataset is uses 9,134 Java code snippets with 901,028 train / 415,416 dev / 415,416 test labeled clone pairs"
+P33-CG,ARXIV,2022,Code Generation,"Adapter, LoRA, FF-LoRA (Feed Forward layer), FF-LoRA + AT","CodeT5-base, PLBART-base",Encoder-Decoder,"CONCODE dataset with 100,000 train / 2,000 dev / 2,000 test examples in Java"
+P33-CTrans,ARXIV,2022,Code Translation,"Adapter, LoRA, FF-LoRA (Feed Forward layer), FF-LoRA + AT","CodeT5-base, PLBART-base",Encoder-Decoder,"uses 10,300 train / 500 dev / 1,000 test code snippet pairs between C# and Java,"
+P34-CSum,FSE,2022,Code Summarization,Prompt Tuning,"CodeT5-small, CodeT5-base",Encoder-Decoder,"same dataset as the CodeT5
+work. The dataset is from CodeSearchNet [18], which contains
+thousands of code snippet and natural language description pairs
+for six programming languages. (train/val/test) Ruby (48791, 2209, 2279), JavaScript (123889, 8253, 6483), Go (317832, 14242, 14291),  Python (409230, 22906, 22104), Java (454451, 15053, 26717), PHP (523712, 26015, 28391)"
+P34-CTrans,FSE,2022,Code Translation,Prompt Tuning,"CodeT5-small, CodeT5-base",Encoder-Decoder,"provided by Lu et al.,
+and is collected from four public repositories (including Lucene,
+POI, JGit and Antlr). Given a piece of Java (C#) code, the task is to
+translate the code into the corresponding C# (Java) version.  (train/val/test) (10300, 500, 1000)"
+P34-DD,FSE,2022,Defect Detection,Prompt Tuning,"CodeBERT, CodeT5-small, CodeT5-base","Encoder, Encoder-Decoder","Zhou et al.
+It contains 27K+ C code snippets from two open-source projects
+QEMU and FFmpeg, and 45.0% of the entries are defective. (train/val/test) (21854, 2732, 2732)"
+P35-CSum,ICSE,2023,Code Summarization,Adapter,"CodeT5, UniXcoder","Encoder-Decoder, Encoder","CodeSearchNet (contains code-comment pairs across six programming languages with the following train/dev/test/candidate sizes respectively: Ruby (24,927 / 1,400 / 1,261 / 4,360), JavaScript (58,025 / 3,885 / 3,291 / 13,981), Java (164,923 / 5,183 / 10,955 / 40,347), Go (167,288 / 7,325 / 8,122 / 28,120), PHP (241,241 / 12,982 / 14,014 / 52,660), and Python (251,820 / 13,914 / 14,918 / 43,827).)"
+P35-CS,ICSE,2023,Code Search,Adapter,UniXcoder,Encoder,"CodeSearchNet (contains code-comment pairs across six programming languages with the following train/dev/test/candidate sizes respectively: Ruby (24,927 / 1,400 / 1,261 / 4,360), JavaScript (58,025 / 3,885 / 3,291 / 13,981), Java (164,923 / 5,183 / 10,955 / 40,347), Go (167,288 / 7,325 / 8,122 / 28,120), PHP (241,241 / 12,982 / 14,014 / 52,660), and Python (251,820 / 13,914 / 14,918 / 43,827).)"
+P36-CT,ICSE,2022,Cloze Test,L-Adapter,RoBERTa-base,Encoder,"dataset consists of 1,264 (CT-Max/Min) and 40,137 (CT-all) instances for Python, and 482 (CT-Max/Min) and 40,492 (CT-all) instances for Java, derived from the validation and test splits of CodeSearchNet."
+P36-CCD,ICSE,2022,Code Clone Detection,L-Adapter + T-Adapter,RoBERTa-base,Encoder," datasets include BCB with 901,028 training, 415,416 validation, and 415,416 test pairs; POJ-104 with 32,000 training, 8,000 validation, and 12,000 test samples; and SCD-88 with 7,800 training, 1,040 validation, and 2,600 test samples."
+P37,FORGE,2025,Code Summarization,QLoRA,"CodeLlama-7B, CodeLlama-34B, DeepSeek-Coder-1.3B, DeepSeek-Coder-6.7B, DeepSeek-Coder-33B",Decoder,CodeXGLUE
