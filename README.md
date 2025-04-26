@@ -52,8 +52,8 @@ The rise of Artificial Intelligence (AI)—and particularly Large Language Model
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
-   cd <repo-directory>
+   git clone https://github.com/alvi75/SLR-PEFT.git
+   cd SLR-PEFT
    ```
 2. Install requirements:
    ```bash
