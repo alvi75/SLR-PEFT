@@ -12,19 +12,6 @@ Our findings aim to inform future research and guide the practical deployment of
 
 ---
 
-## Overview
-
-This repository analyzes benchmarking practices for Parameter-Efficient Fine-Tuning (PEFT) methods applied to Software Engineering (SE) tasks.
-
-We cover:
-- Adherence to established evaluation practices
-- Usage of standard datasets
-- Distribution of PEFT methods across tasks
-- Hardware resources used in studies
-- Publication venues and trends over time
-
----
-
 ## Visualizations
 
 ### 1. Heatmap of PEFT Methods Across SE Tasks
