@@ -35,6 +35,6 @@ ax.set_ylim(-0.5, len(df_reversed) - 0.5)
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 
-plt.savefig("venue_barplot.png", format="png", dpi=300, bbox_inches="tight")
+plt.savefig("../visualizations/venue_barplot.png", format="png", dpi=300, bbox_inches="tight")
 
 plt.show()
