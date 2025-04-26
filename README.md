@@ -29,7 +29,7 @@ The rise of Artificial Intelligence (AI)—and particularly Large Language Model
 
 ### 4. Paper Selection Process
 
-![Paper Selection Process](visualizations/.png)
+![Paper Selection Process](visualizations/data_collection_pipeline_0.png)
 
 - Workflow for paper selection in the SLR.
 
@@ -68,4 +68,4 @@ Outputs will be saved inside the `/visualizations` folder.
 
 ---
 
-Thank you for exploring our work on PEFT for SE tasks!
+Thank you for exploring our work on PEFT for software engineering tasks!
