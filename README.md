@@ -61,7 +61,7 @@ The rise of Artificial Intelligence (AI)—and particularly Large Language Model
    ```
 3. Run visualization scripts (optional):
    ```bash
-   python code/generate_visualizations.py
+   python scripts/venue_distribution.py
    ```
 
 Outputs will be saved inside the `/visualizations` folder.
