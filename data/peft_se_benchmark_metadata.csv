@@ -66,7 +66,7 @@ and 1,000 negative instances which have not been
 included in the training dataset."
 P28-CT,EMSE,2024,Cloze Test, L-Adapter,RoBERTa-base,Encoder,"Java & Python: CodeSearchNet (CSN) used to train L-adapters for Java and Python.
 
-C/C++: CodeNet used to train L-adapter for C/C++ (since CSN doesn’t have C/C++)."
+C/C++: CodeNet used to train L-adapter for C/C++ (since CSN doesnâ€™t have C/C++)."
 P28-CCD,EMSE,2024,Code Clone Detection," L-Adapter, T-Adapter",RoBERTa-base,Encoder,"uses CodeNet to train C/C++ L-adapters evaluated on POJ-104, CodeSearchNet to train Java and Python L-adapters evaluated on BigCloneBench (Java) and SCD-88 (Python)."
 P28-CSum,EMSE,2024,Code Summarization, T-Adapter,"RoBERTa-base, GraphCodeBERT, CodeBERT",Encoder,"bimodal CodeSearchNet dataset (code-comment pairs) across six languages: Ruby, JavaScript, Go, Python, Java, and PHP."
 P29-CS,ISSTA,2023,Code Search,Telly-K (K indicate bottom layers),"UniXcoder, GraphCodeBERT  (result on appendix)",Encoder,"CodeSearchNet (Python(251K/9.6K/1K), Ruby(24.9K/1.4K/1.3K))  (train/val/test)"
