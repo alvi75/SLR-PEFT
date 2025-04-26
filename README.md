@@ -29,7 +29,7 @@ We cover:
 
 ### 1. Heatmap of PEFT Methods Across SE Tasks
 
-![PEFT Heatmap](visualizations/peft_se_tasks_heatmap.png)
+![PEFT Heatmap](visualizations/heatmap_of_peft_methods_across_se_tasks.png)
 
 - **Figure**: Number of studies using each PEFT method for each SE task.
 
@@ -59,7 +59,7 @@ We cover:
 
 ### 6. Paper Selection Process
 
-![Paper Selection Process](visualizations/data_collection_pipeline.pdf)
+![Paper Selection Process](visualizations/data_collection_pipeline.png)
 
 - Systematic workflow for paper selection in the SLR.
 
