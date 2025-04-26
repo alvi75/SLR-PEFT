@@ -42,7 +42,7 @@ We cover:
 
 ### 3. Publication Venues
 
-![Publication Venues](visualizations/.png)
+![Publication Venues](visualizations/venue_barplot_0.png)
 
 - Distribution of PEFT-SE research across conferences and journals.
 
