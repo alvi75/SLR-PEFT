@@ -41,7 +41,7 @@ The rise of Artificial Intelligence (AI)—and particularly Large Language Model
 |:------------|:--------|
 | `/data` | Contains processed data and metadata for selected papers |
 | `/scripts` | Scripts for data processing and visualization |
-| `/visualizations` | All generated charts and plots (including the new heatmap) |
+| `/visualizations` | All generated charts and plots |
 | `README.md` | Updated README document |
 | `requirements.txt` | Python dependencies |
 
