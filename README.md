@@ -8,7 +8,7 @@ The rise of Artificial Intelligence (AI)—and particularly Large Language Model
 
 ## Visualizations
 
-### 1. Heatmap of PEFT Methods Across SE Tasks
+### 1. Heatmap of PEFT Methods Across Software Engineering Tasks
 
 ![PEFT Heatmap](visualizations/heatmap_of_peft_methods_across_se_tasks.png)
 
