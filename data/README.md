@@ -31,4 +31,5 @@ The following 27 papers were selected for our analysis after applying our inclus
 | P35 | [One Adapter for All Programming Languages? Adapter Tuning for Code Search and Summarization](https://ieeexplore.ieee.org/abstract/document/10172875) | ICSE |
 | P36 | [On The Cross-Modal Transfer from Natural Language to Code through Adapter Modules](https://arxiv.org/pdf/2204.08653) | ARXIV |
 | P37 | [Resource-Efficient & Effective Code Summarization](https://arxiv.org/abs/2502.03617) | FORGE |
+| P38 | [Beyond PEFT: Layer-Wise Optimization for More Effective and Efficient Large Code Model Tuning]([https://arxiv.org/abs/2502.03617](https://dl.acm.org/doi/10.1145/3729341)) | FSE |
 
