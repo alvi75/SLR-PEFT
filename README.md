@@ -29,7 +29,7 @@ The rise of Artificial Intelligence (AI)—and particularly Large Language Model
 
 ### 4. Paper Selection Process
 
-![Paper Selection Process](visualizations/data_collection_pipeline_1.png)
+![Paper Selection Process](visualizations/data_collection_pipeline_v2.pdf)
 
 - Workflow for paper selection in the SLR.
 
