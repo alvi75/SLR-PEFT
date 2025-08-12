@@ -3,8 +3,8 @@ import pandas as pd
 from matplotlib.ticker import MaxNLocator
 
 venues = ['ACL', 'EMNLP', 'EMSE', 'FORGE', 'ICPC', 'ISSTA', 'KDD', 'MSR', 'NAACL', 'NeurIPS', 'SANER', 
- 'arXiv', 'FSE', 'TSE', 'ICSE', 'TOSEM', 'ASE']
-paper_counts = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 4]
+ 'arXiv', 'TSE', 'FSE', 'ICSE', 'TOSEM', 'ASE']
+paper_counts = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 4]
 
 df = pd.DataFrame({'Venue': venues, 'Number of Papers': paper_counts})
 
