@@ -13,8 +13,10 @@ task_fullname_map = {
     "CTrans": "Code Translation",
     "CMG": "Commit Message Generation",
     "CComp": "Code Completion",
+    "HFP": "Header File Prediction",
     "JITCU": "Just-in-time Comment Update",
     "MNR": "Method Name Recommendation",
+    "PBT": "Protocol Buffer Transformation",
     "UTG": "Unit Test Generation",
     "CT": "Cloze Test",
     "CCD": "Code Clone Detection",
@@ -31,7 +33,7 @@ ordered_methods = [
 ]
 
 peft_task_data = {
-    "Base LoRA": {"APR": 3, "CG": 6, "CComp": 1, "CMG": 2, "CR": 1, "CRF": 1, "CRG": 1, "CSum": 2, "CTrans": 2, "JITCU": 1, "CCD": 2, "DD": 2},
+    "Base LoRA": {"APR": 3, "CG": 7, "CComp": 2, "CMG": 2, "CR": 1, "CRF": 1, "CRG": 1, "CSum": 2, "CTrans": 3, "HFP": 1, "JITCU": 1, "PBT": 1, "CCD": 2, "DD": 2},
     "QLoRA": {"CG": 1, "CSum": 2, "CTrans": 1, "CComp": 1, "UTG": 1},
     "AdaLoRA": {"APR": 1},
     "FF-LoRA": {"CG": 1, "CSum": 1, "CTrans": 1, "CCD": 1},
