@@ -1,6 +1,6 @@
 ## Final Paper Selection
 
-The following 29 papers were selected for our analysis after applying our inclusion and exclusion criteria. In this table, the 'Paper ID' column represents the reference identifier assigned to each publication in our study rather than a sequential numbering system. These identifiers are used throughout our analysis to consistently reference specific papers. Structured metadata for the reviewed papers, including Paper ID, Venue, Year, SE Task, PEFT Method, Base Model, Model Architecture, and Dataset, is available in our peft_se_benchmark_metadata.csv dataset.
+The following 28 papers were selected for our analysis after applying our inclusion and exclusion criteria. In this table, the 'Paper ID' column represents the reference identifier assigned to each publication in our study rather than a sequential numbering system. These identifiers are used throughout our analysis to consistently reference specific papers. Structured metadata for the reviewed papers, including Paper ID, Venue, Year, SE Task, PEFT Method, Base Model, Model Architecture, and Dataset, is available in our peft_se_benchmark_metadata.csv dataset.
 
 | Paper ID |                                                 Paper Title                                                 | Venue |
 |:--------:|:-----------------------------------------------------------------------------------------------------------:|:-----:|
